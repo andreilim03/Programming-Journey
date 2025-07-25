@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+    
+    // Making variable for scanner to use it
+    Scanner scan = new Scanner(System.in);
+    
+    // Basic Calculator variables
+    int num1, num2, addition, subtraction, multiplication, division, option;
+    
+    System.out.print("Enter first number: ");
+    num1 = scan.nextInt();
+    
+    System.out.print("Enter second number: ");
+    num2 = scan.nextInt();
+    
+    System.out.println("");
+    System.out.println("Operators\n 1. Addition\n 2. Subtraction\n 3. Multiplication\n 4. Division");
+    System.out.println("");
+    
+    System.out.print("Enter option from 1-4: ");
+    option = scan.nextInt();
+    
+    switch(option) {
+        case 1:
+            addition = num1 + num2;
+            System.out.println("The total is: " + addition);
+        break;
+        
+        case 2:
+            subtraction = num1 - num2;
+            System.out.println("The total is: " + subtraction);
+        break;
+        
+        case 3:
+            multiplication = num1 * num2;
+            System.out.println("The total is: " + multiplication);
+        break;
+        
+        case 4:
+            division = num1 / num2;
+            System.out.println("The total is: " + division);
+        break;
+        
+        default:
+            System.out.println("Error Operator!!!");
+    }
+
+    }
+}
+
+// Made this code on May 26, 2025.
+// This code is a basic calculator which user can type two number and select operator ranges from 1-4 (different operation)
+// This code also used switch statement
